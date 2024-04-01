@@ -1,5 +1,5 @@
 <h1 class="text-3xl text-primary font-bold text-center">
-    RyVarr Engine Capabilities
+    StructLite Engine Capabilities
 </h1>
 <div class="flex justify-center items-center">
     <ul
@@ -7,7 +7,9 @@
     >
         <li>
             <div class="timeline-start timeline-box">
-                Linear Static Structural Analysis for 3D Members
+                Linear Static Structural Analysis for 3D Members. <span
+                    class="text-primary">Free</span
+                >
             </div>
             <div class="timeline-middle">
                 <svg
@@ -40,7 +42,8 @@
                 >
             </div>
             <div class="timeline-end timeline-box">
-                Perform Analysis on Revit Rectangular Concrete Beams and Columns
+                Perform Analysis on Revit Rectangular Concrete Beams and
+                Columns. <span class="text-primary">Free</span>
             </div>
             <hr class="bg-primary" />
         </li>
@@ -48,7 +51,7 @@
             <hr class="bg-primary" />
             <div class="timeline-start timeline-box">
                 Produces shear, moment, and deflection results and diagrams for
-                each member
+                each member. <span class="text-primary">Free</span>
             </div>
             <div class="timeline-middle">
                 <svg
@@ -81,14 +84,18 @@
                 >
             </div>
             <div class="timeline-end timeline-box">
-                Rebar Rectangular Concrete Beams and Columns after analysis
+                Perform Analysis on Concrete slabs. <span class="text-primary"
+                    >Free</span
+                >
             </div>
             <hr />
         </li>
         <li>
             <hr />
             <div class="timeline-start timeline-box">
-                Perform Analysis on Concrete slabs
+                Rebar Rectangular Concrete Beams and Columns after analysis. <span
+                    class="text-primary">Paid</span
+                >
             </div>
             <div class="timeline-middle">
                 <svg
@@ -121,7 +128,9 @@
                 >
             </div>
             <div class="timeline-end timeline-box">
-                Rebar Rectangular Concrete Slabs after analysis
+                Rebar Basic Concrete Slabs after analysis. <span
+                    class="text-primary">Paid</span
+                >
             </div>
             <hr />
         </li>

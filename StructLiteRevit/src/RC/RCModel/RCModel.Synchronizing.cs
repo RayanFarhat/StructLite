@@ -15,7 +15,7 @@ namespace StructLite.RC
     public partial class RCModel
     {
         /// <summary>
-        /// Ensure data between physical and analytical and RyVarr elements is consistent and up-to-date.
+        /// Ensure data between physical and analytical and StructLite elements is consistent and up-to-date.
         /// </summary>
         public void SynchronizeModels()
         {
@@ -45,7 +45,7 @@ namespace StructLite.RC
                     var p1 = mem.GetCurve().GetEndPoint(0);
                     var p2 = mem.GetCurve().GetEndPoint(1);
                     var centerMemberPoint = new XYZ((p1.X + p2.X) / 2, (p1.Y + p2.Y) / 2, (p1.Z + p2.Z) / 2);
-                    var distance = getDistance(centerMemberPoint,Adapter.getCentroid(elem));
+                    var distance = getDistance(centerMemberPoint, Adapter.getCentroid(elem));
                     if (distance < minDistance)
                     {
                         minDistance = distance;
@@ -74,7 +74,7 @@ namespace StructLite.RC
                     bool support_RX = boundary.LookupParameter("X Rotation").AsValueString() == "Fixed" ? true : false;
                     bool support_RY = boundary.LookupParameter("Y Rotation").AsValueString() == "Fixed" ? true : false;
                     bool support_RZ = boundary.LookupParameter("Z Rotation").AsValueString() == "Fixed" ? true : false;
-                    FEModel.def_support(nodeName,support_DX,support_DY,support_DZ,support_RX,support_RY,support_RZ);
+                    FEModel.def_support(nodeName, support_DX, support_DY, support_DZ, support_RX, support_RY, support_RZ);
                 }
             }
             addAllLoads();

@@ -38,7 +38,7 @@
         {
             title: "Contact information",
             paragraph:
-                "You can contact us at any time via our contact form.: https://ryvarr.com/contact.",
+                "You can contact us at any time via our contact form.: https://structlite.com/contact.",
         },
     ];
 </script>

@@ -45,10 +45,10 @@
         minutes.
       </p>
       <div>
-        <a class="p-0 hover:bg-transparentt" href={btnUrl}
-          ><button class="btn btn-outline btn-primary">{btnTitle}</button></a
+        <a class="p-0 hover:bg-transparentt" href="/contact"
+          ><button class="btn btn-outline btn-primary">Contact Us</button></a
         >
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-primary">Download</button>
       </div>
     </div>
   </div>

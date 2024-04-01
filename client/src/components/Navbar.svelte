@@ -3,7 +3,7 @@
   import NavBarContentMobile from "./Navbar/NavBarContentMobile.svelte";
 </script>
 
-<div class="drawer fixed drawer-end z-[1]">
+<div class="drawer fixed drawer-end z-[20]">
   <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content flex flex-col">
     <!-- Navbar -->

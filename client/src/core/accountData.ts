@@ -1,6 +1,7 @@
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 let localData
+// TODO AccountData in cookie nit in local storage
 if (browser) {
     localData = JSON.parse(window.localStorage.getItem("AccountData") as string) as AccountData;
 }

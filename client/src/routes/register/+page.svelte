@@ -139,7 +139,7 @@
           </div>
           <p>
             By clicking the “Register” button, you are creating an account, and
-            agree to RyVarr'
+            agree to StructLite'
             <a class="link link-primary" href="/terms">Terms of Service</a> and
             <a class="link link-primary" href="/privacy">Privacy Policy</a>
           </p>

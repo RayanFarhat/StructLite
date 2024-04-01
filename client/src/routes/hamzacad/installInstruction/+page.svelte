@@ -21,7 +21,7 @@
         <div class="collapse-title text-xl font-medium">Step 2</div>
         <div class="collapse-content">
             <p>
-                Please visit https://ryvarr.com/hamzacad and click on the
+                Please visit https://structlite.com/hamzacad and click on the
                 "Download Page" button. From there, select your preferred
                 version and then proceed by clicking the "Download" button.
             </p>
@@ -44,11 +44,11 @@
                 to the existing text:
             </p>
             <div class="mockup-code">
-                <code>-b C:\RyVarr\HamzaCAD2023\load.scr</code>
+                <code>-b C:\StructLite\StructLiteRevit\load.scr</code>
             </div>
             <p>or</p>
             <div class="mockup-code">
-                <code>-b C:\RyVarr\HamzaCAD2024\load.scr</code>
+                <code>-b C:\StructLite\StructLiteRevit\load.scr</code>
             </div>
             <p>Click "Apply" and then close the window.</p>
         </div>
@@ -60,7 +60,7 @@
             <p>
                 To access HamzaCAD in AutoCAD, navigate to the "HamzaCAD" tab.
                 Click on the "Draw" button, followed by the "Authorization"
-                button. Next, visit "http://ryvarr/profile" to copy your
+                button. Next, visit "http://structlite/profile" to copy your
                 authorization token. Paste this token into the authorization
                 window. You are now successfully authorized and can utilize
                 HamzaCAD's features.

@@ -7,19 +7,31 @@
     <br />
     <br />
     <br />
-        <h2 class="text-3xl">Who we are</h2>
-        <br />
-        <p style="white-space:  pre-wrap" class="text-lg">Our company name is "RyVarr". Our website address is "https://ryvarr.com".</p>
-        <br />
-        <br />
-        <h2 class="text-3xl">What we believe</h2>
-        <br />
-        <p style="white-space:  pre-wrap" class="text-lg">We understand the substantial time structural engineers invest in tasks that could be easily automated. Our goal is to develop software solutions that transform their hours of work into seconds.</p>
-        <br />
-        <br />
-        <h2 class="text-3xl">What we provide</h2>
-        <br />
-        <p style="white-space:  pre-wrap" class="text-lg">We specialize in developing AutoCAD and Revit plugins designed to enhance the productivity of structural engineers, available for purchase. Additionally, we offer customized plugin development services tailored to fulfill our customers' unique requirements and specific project needs.</p>
-        <br />
-        <br />
+    <h2 class="text-3xl">Who we are</h2>
+    <br />
+    <p class="text-lg">
+        Our company name is "StructLite". Our website address is
+        "https://structlite.com".
+    </p>
+    <br />
+    <br />
+    <h2 class="text-3xl">What we believe</h2>
+    <br />
+    <p class="text-lg">
+        We know that many structural engineers work on simple building projects
+        but struggle with the high cost of comprehensive structural analysis
+        software. Our goal is to offer free/cheap software that is sufficient
+        for basic projects.
+    </p>
+    <br />
+    <br />
+    <h2 class="text-3xl">What we provide</h2>
+    <br />
+    <p class="text-lg">
+        We offer a Revit plugin for structural analysis and, in the future, will
+        automate Rebar for basic reinforced concrete buildings. This
+        significantly reduces engineering time from days to seconds.
+    </p>
+    <br />
+    <br />
 </div>

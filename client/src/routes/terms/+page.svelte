@@ -8,26 +8,7 @@
         {
             title: "Licensing",
             paragraph:
-                "Subscription are valid from the date of purchase until the end of time A valid and active License is required in order to access updates and downloads for purchased product, We are referring to the license as the Pro subscription.",
-        },
-        {
-            title: "Payment and Fees",
-            paragraph:
-                "Some parts of Service are billed on a subscription basis (“Subscription(s)”). You will be billed in advance on a recurring and periodic basis (“Billing Cycle”). Billing cycles are set either on a monthly or yearly, depending on the type of subscription plan you select when purchasing a Subscription. To proceed with your subscription payment, a valid payment method, such as PayPal, is necessary. You agree to provide Ryvarr with precise and comprehensive billing details, encompassing full name, address, state, zip code, telephone number, and accurate payment method information required by PayPal. Please note that any issues encountered with PayPal preventing payment are beyond our responsibility.",
-        },
-        {
-            title: "Transferring Licenses",
-            paragraph: "Licenses are non-transferable",
-        },
-        {
-            title: "License Use and Abuse",
-            paragraph:
-                "We reserve the right to limit or revoke licenses at any time in cases of abuse, such as re-selling access to your account or distributing your account on the open internet. Licenses that are revoked are not eligible for refunds.",
-        },
-        {
-            title: "Software Updates",
-            paragraph:
-                "If you've subscribed to the pro plan, updates are automatically provided at no additional cost for the duration of your active account. There's no extra charge for updates, ensuring a seamless experience for you or any user.",
+                "The Software is intended to assist engineers trained, experienced, and qualified to perform structural analysis and design. Individuals without the proper training, experience, and qualifications shall not use the Software. While We work very hard to test and validate the Software, We cannot provide any guarantees it is free from errors. By using the StructLite Software, the User of the Software agrees that the User is ultimately responsible to validate the results of the Software.",
         },
         {
             title: "Agreement for Unexpected Events and Product Use",
@@ -40,19 +21,9 @@
                 "We aim to reply to all support requests. We are not expected to address every request; instead, we prioritize the most frequent and crucial ones, handling them as promptly as we can.\n you('The User') agree that you will not pursue legal action against us under any circumstances if we didn't response to your request.",
         },
         {
-            title: "Refunds",
-            paragraph:
-                "We acknowledge that our product might not align with everyone's requirements. That's why we provide guided tours before purchase, ensuring clarity about its suitability for you. As our subscription can be to one month, refunds aren't offered due to the short duration and low price. We will only consider issuing a refund if we have ceased the website and server, discontinued the product, or paused it for several days.",
-        },
-        {
             title: "Website Functionality",
             paragraph:
                 "This website is optimized for most modern browsers, with primary testing conducted on Chrome. If you encounter any issues, we recommend accessing the website using the Chrome browser for optimal functionality.",
-        },
-        {
-            title: "Fee Changes",
-            paragraph:
-                "You agree that the subscription fee may be subject to change in the future due to tax adjustments, third-party modifications, or any reasons deemed necessary for our business to make decisions regarding subscription price alterations.",
         },
         {
             title: "Security",
