@@ -1,0 +1,18 @@
+FROM node:21-alpine3.18
+
+WORKDIR /app
+
+COPY svelte.config.js ./
+COPY package*.json ./
+COPY postcss.config.js ./
+COPY vite.config.ts ./
+COPY tailwind.config.js ./
+
+
+RUN npm install
+
+COPY ./src ./src
+COPY ./static ./static
+RUN npm run build
+
+ENTRYPOINT [ "npx", "vite","preview" ,"--host","0.0.0.0"]
