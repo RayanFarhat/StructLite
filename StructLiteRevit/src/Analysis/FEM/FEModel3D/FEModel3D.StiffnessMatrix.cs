@@ -13,14 +13,10 @@ namespace StructLite.Analysis
         /// <summary>
         /// Returns the model's global stiffness matrix.
         /// </summary>
-        ///   <param name="combo_name">The load combination to get the stiffness matrix for. Defaults to 'Combo 1'.</param>
         ///   <param name="check_stability">auses Pynite to check for instabilities if set to True. Defaults
         ///   to True.Set to False if you want the model to run faster.</param>
-        public Matrix K(string combo_name = "Combo 1", bool check_stability = true)
+        public Matrix K(bool check_stability = true)
         {
-            //TODO: check if remove combo_name
-
-
             // Initialize a dense matrix of zeros
             var K = new Matrix(Nodes.Count * 6);
 

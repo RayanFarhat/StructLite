@@ -84,8 +84,8 @@
                 >
             </div>
             <div class="timeline-end timeline-box">
-                Perform Analysis on Concrete slabs. <span class="text-primary"
-                    >Free</span
+                Rebar Rectangular Concrete Beams and Columns after analysis. <span
+                    class="text-primary">Free</span
                 >
             </div>
             <hr />
@@ -93,8 +93,8 @@
         <li>
             <hr />
             <div class="timeline-start timeline-box">
-                Rebar Rectangular Concrete Beams and Columns after analysis. <span
-                    class="text-primary">Paid</span
+                Perform Analysis on Concrete slabs. <span class="text-primary"
+                    >Paid</span
                 >
             </div>
             <div class="timeline-middle">

@@ -92,7 +92,7 @@ namespace StructLite
         // Both OnStartup and OnShutdown must be implemented as public method
         public Result OnStartup(UIControlledApplication application)
         {
-            string assembly =  Assembly.GetExecutingAssembly().Location;
+            string assembly = Assembly.GetExecutingAssembly().Location;
             UIAdapter.Init(application);
             UIAdapter.CreateTab("StructLite");
 
