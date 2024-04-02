@@ -1,6 +1,6 @@
 <div class="bg-base-200 p-4 border m-6 border-primary">
   <div class="flex flex-col w-full lg:flex-row justify-center items-center">
-    <a class="button my-20" href="/hamzacad" style="--color: #dc2626;">
+    <a class="button my-20" href="/download" style="--color: #dc2626;">
       <span></span>
       <span></span>
       <span></span>

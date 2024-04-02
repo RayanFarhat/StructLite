@@ -48,7 +48,9 @@
         <a class="p-0 hover:bg-transparentt" href="/contact"
           ><button class="btn btn-outline btn-primary">Contact Us</button></a
         >
-        <button class="btn btn-primary">Download</button>
+        <a class="p-0 hover:bg-transparentt" href="/download"
+          ><button class="btn btn-primary">Download</button></a
+        >
       </div>
     </div>
   </div>
