@@ -1,0 +1,2 @@
+1- When having App service, in order to publish using VS, you need to allow "SCM basic authentication".
+2- Once the app published you can see the files in [structlite.scm.azurewebsites.net](https://structlite.scm.azurewebsites.net/).
