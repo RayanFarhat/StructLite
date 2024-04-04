@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ryanf\\Desktop\\StructLite\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55533585-641E-4F7A-B137-8287E65C04B8}|Backend.csproj|c:\\users\\ryanf\\desktop\\structlite\\backend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{55533585-641E-4F7A-B137-8287E65C04B8}|Backend.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{55533585-641E-4F7A-B137-8287E65C04B8}|Backend.csproj|c:\\users\\ryanf\\desktop\\structlite\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55533585-641E-4F7A-B137-8287E65C04B8}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\Backend\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\Backend\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-02T20:10:22.66Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T10:38:35.807Z",
               "EditorCaption": ""
             }
           ]

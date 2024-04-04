@@ -19,7 +19,7 @@
                         </p>
                         <div class="card-actions justify-start">
                             Email : <span class="text-primary"
-                                >structliteofficial@gmail.com
+                                >structlite@gmail.com
                             </span>
                         </div>
                     </div>

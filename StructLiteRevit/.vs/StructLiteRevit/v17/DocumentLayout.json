@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4AD712EA-368E-4708-B016-97A277449569}|..\\SetupProj\\SetupProj.aiproj|C:\\Users\\ryanf\\Desktop\\StructLite\\SetupProj\\SetupProj.aip||{AE40A4D1-A614-4A08-B9E2-B74E011783ED}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|c:\\users\\ryanf\\desktop\\structlite\\structliterevit\\src\\analysis\\fem\\femodel3d\\femodel3d.stiffnessmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|solutionrelative:src\\analysis\\fem\\femodel3d\\femodel3d.stiffnessmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,6 +41,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SetupProj.aip",
+              "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\SetupProj\\SetupProj.aip",
+              "RelativeDocumentMoniker": "..\\SetupProj\\SetupProj.aip",
+              "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\SetupProj\\SetupProj.aip",
+              "RelativeToolTip": "..\\SetupProj\\SetupProj.aip",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-03T19:40:47.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FEModel3D.StiffnessMatrix.cs",
               "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Analysis\\FEM\\FEModel3D\\FEModel3D.StiffnessMatrix.cs",
               "RelativeDocumentMoniker": "src\\Analysis\\FEM\\FEModel3D\\FEModel3D.StiffnessMatrix.cs",
@@ -50,7 +65,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StructLiteRevit",
               "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\StructLiteRevit.csproj",
               "RelativeDocumentMoniker": "StructLiteRevit.csproj",
@@ -61,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RCModel.FEModel3D.cs",
               "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\RC\\RCModel\\RCModel.FEModel3D.cs",
               "RelativeDocumentMoniker": "src\\RC\\RCModel\\RCModel.FEModel3D.cs",
@@ -73,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Main.cs",
               "RelativeDocumentMoniker": "src\\Main.cs",
