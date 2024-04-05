@@ -3,18 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4AD712EA-368E-4708-B016-97A277449569}|..\\SetupProj\\SetupProj.aiproj|C:\\Users\\ryanf\\Desktop\\StructLite\\SetupProj\\SetupProj.aip||{AE40A4D1-A614-4A08-B9E2-B74E011783ED}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|c:\\users\\ryanf\\desktop\\structlite\\structliterevit\\src\\analysis\\fem\\femodel3d\\femodel3d.stiffnessmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|solutionrelative:src\\analysis\\fem\\femodel3d\\femodel3d.stiffnessmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|c:\\users\\ryanf\\desktop\\structlite\\structliterevit\\src\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|solutionrelative:src\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|StructLiteRevit||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\analysis\\fem\\femodel3d\\femodel3d.stiffnessmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|solutionrelative:src\\analysis\\fem\\femodel3d\\femodel3d.stiffnessmatrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{071CE39E-3E9C-4EEF-A2FA-A739D7C3D5E1}|StructLiteRevit.csproj|C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\rc\\rcmodel\\rcmodel.femodel3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,13 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SetupProj.aip",
-              "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\SetupProj\\SetupProj.aip",
-              "RelativeDocumentMoniker": "..\\SetupProj\\SetupProj.aip",
-              "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\SetupProj\\SetupProj.aip",
-              "RelativeToolTip": "..\\SetupProj\\SetupProj.aip",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-03T19:40:47.264Z",
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Main.cs",
+              "RelativeDocumentMoniker": "src\\Main.cs",
+              "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Main.cs",
+              "RelativeToolTip": "src\\Main.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAQwFQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T10:30:46.383Z",
               "EditorCaption": ""
             },
             {
@@ -60,23 +55,11 @@
               "RelativeToolTip": "src\\Analysis\\FEM\\FEModel3D\\FEModel3D.StiffnessMatrix.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAQwBEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T17:05:16.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T17:05:16.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StructLiteRevit",
-              "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\StructLiteRevit.csproj",
-              "RelativeDocumentMoniker": "StructLiteRevit.csproj",
-              "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\StructLiteRevit.csproj*",
-              "RelativeToolTip": "StructLiteRevit.csproj*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-01T17:00:42.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "RCModel.FEModel3D.cs",
               "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\RC\\RCModel\\RCModel.FEModel3D.cs",
               "RelativeDocumentMoniker": "src\\RC\\RCModel\\RCModel.FEModel3D.cs",
@@ -85,18 +68,6 @@
               "ViewState": "AQIAAHIAAAAAAAAAAAAtwLUAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T10:33:29.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Main.cs",
-              "RelativeDocumentMoniker": "src\\Main.cs",
-              "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Main.cs",
-              "RelativeToolTip": "src\\Main.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:30:46.383Z"
             }
           ]
         }

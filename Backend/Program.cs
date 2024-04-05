@@ -20,7 +20,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-
 app.UseStaticFiles();
 app.MapFallbackToFile("index.html");
 

@@ -75,3 +75,8 @@ _[Ss]cripts
 
 # mine
 wwwroot/
+# But not these files...
+!StructLiteRevit/GUI/server/
+!StructLiteRevit/GUI/server/*
+!StructLiteRevit/GUI/wwwroot/
+!StructLiteRevit/GUI/wwwroot/*
