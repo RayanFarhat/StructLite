@@ -102,7 +102,7 @@ namespace StructLite.RC
                     if (distLoad.OrientTo == LoadOrientTo.Project)
                     {
                         if (forceVector1.X != 0 || forceVector2.X != 0)
-                            FEModel.add_member_dist_load(hostId,Direction.FX, forceVector1.X, forceVector2.X, localX1Position,localX2Position, distLoad.LoadCaseName);
+                            FEModel.add_member_dist_load(hostId, Direction.FX, forceVector1.X, forceVector2.X, localX1Position, localX2Position, distLoad.LoadCaseName);
                         if (forceVector1.Y != 0 || forceVector2.Y != 0)
                             FEModel.add_member_dist_load(hostId, Direction.FY, forceVector1.Y, forceVector2.Y, localX1Position, localX2Position, distLoad.LoadCaseName);
                         if (forceVector1.Z != 0 || forceVector2.Z != 0)
@@ -150,7 +150,7 @@ namespace StructLite.RC
             double Iz = h * Math.Pow(b, 3) / 12;
             double L;// length of long edge
             double S;// length of short edge
-            if (b>h)
+            if (b > h)
             {
                 L = b;
                 S = h;
@@ -161,11 +161,11 @@ namespace StructLite.RC
                 S = b;
             }
             var JLastPart = 1 - (Math.Pow(S, 4) / (12 * Math.Pow(L, 4)));
-            double J = L * Math.Pow(S, 3) * ((1.0 / 3.0) - (0.21*S/L)* JLastPart);
+            double J = L * Math.Pow(S, 3) * ((1.0 / 3.0) - (0.21 * S / L) * JLastPart);
 
             var FiniteMember = new StructLite.Analysis.Member3D(member.Id.ToString(), FEModel.Nodes[getNodeName(n1)], FEModel.Nodes[getNodeName(n2)],
                 elemMaterialName, FEModel, Iy, Iz, J, A);
-            FEModel.Members.Add(member.Id.ToString(),FiniteMember);
+            FEModel.Members.Add(member.Id.ToString(), FiniteMember);
         }
         public void addRevitMaterialsToFEModel()
         {
@@ -176,12 +176,12 @@ namespace StructLite.RC
                 if (pse == null)
                     continue;
                 var props = pse.GetStructuralAsset();
-                var ryMat = new StructLite.Analysis.Material(mat.Name, props.YoungModulus.Y, props.ShearModulus.Y, 0,0);
+                var ryMat = new StructLite.Analysis.Material(mat.Name, props.YoungModulus.Y, props.ShearModulus.Y, 0, 0);
                 if (FEModel.Materials.ContainsKey(mat.Name))
                 {
                     throw new Exception("StructLite Error, added same material twice!");
                 }
-                FEModel.Materials.Add(mat.Name,ryMat);
+                FEModel.Materials.Add(mat.Name, ryMat);
             }
         }
         public void addLoadCombos()

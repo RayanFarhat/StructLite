@@ -61,7 +61,7 @@ namespace StructLite
                 //model.Members["elem"].plot_Moment(Direction.Mz);
                 //model.Members["elem"].plot_Moment(Direction.My);
                 //TaskDialog.Show("dd",$"mz {model.Members["elem"].Moment(Direction.Mz,4)}\n my {model.Members["elem"].Moment(Direction.My, 4)}");
-                //model.Members["elem"].plot_Deflection(Direction.Fy);
+                model.Members["elem"].plot_Deflection(Direction.Fy);
                 //model.Members["elem"].plot_Deflection(Direction.Fz);
 
                 //TaskDialog.Show("ccs",model.Members["elem"].Deflection(Direction.Fy,6).ToString());
@@ -77,15 +77,15 @@ namespace StructLite
                 // proc.StartInfo.FileName = "C:\\Program Files\\Autodesk\\Revit 2024\\Revit.exe";
                 //proc.StartInfo.Arguments = "C:\\Users\\ryanf\\Desktop\\Project1.rvt";
                 string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                proc.StartInfo.FileName = directory+"\\server\\GUIServer.exe";
+                proc.StartInfo.FileName = directory + "\\server\\StructLiteRevitServer.exe";
                 // Stop the process from opening a new window
                 //proc.StartInfo.RedirectStandardOutput = false;
                 //proc.StartInfo.UseShellExecute = false;
                 //proc.StartInfo.CreateNoWindow = true;
                 //TaskDialog.Show("s", directory + "server/GUIServer.exe");
 
-                proc.Start();
-                proc.WaitForExit();
+                //proc.Start();
+                //proc.WaitForExit();
 
                 //Process[] pname = Process.GetProcessesByName("GUIServer");
                 //if (pname.Length == 0)

@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildProjectExtensionsPath>obj\$(RevitYear)</MSBuildProjectExtensionsPath>
+    <BaseIntermediateOutputPath>obj\$(RevitYear)</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin\$(RevitYear)</BaseOutputPath>
+    <IntermediateOutputPath>obj\$(RevitYear)</IntermediateOutputPath>
+  </PropertyGroup>
+</Project>

@@ -50,7 +50,7 @@ namespace StructLite.RevitCommands
                 {
                     var memberId = elems.FirstOrDefault(x => x.Value == id).Key;
                     var m = RCModel.Instance.FEModel.Members[memberId];
-                    plot(m,comboName);
+                    plot(m, comboName);
                     return Result.Succeeded;
                 }
                 TaskDialog.Show("StructLite Error", "Element is not related to the analytical model.");
@@ -67,13 +67,13 @@ namespace StructLite.RevitCommands
             string checkedButtonName = UIAdapter.RadioButtonGroups["axisRadio"].Current.Name;
             if (checkedButtonName == "toggleButtonX")
             {
-                m.plot_Deflection(Direction.Fx,comboName);
+                m.plot_Deflection(Direction.Fx, comboName);
             }
             else if (checkedButtonName == "toggleButtonY")
             {
-                m.plot_Shear(Direction.Fy,comboName);
-                m.plot_Moment(Direction.Mz,comboName);
-                m.plot_Deflection(Direction.Fy,comboName);
+                m.plot_Shear(Direction.Fy, comboName);
+                m.plot_Moment(Direction.Mz, comboName);
+                m.plot_Deflection(Direction.Fy, comboName);
             }
             else if (checkedButtonName == "toggleButtonZ")
             {

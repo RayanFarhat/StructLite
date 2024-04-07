@@ -1,0 +1,11 @@
+<Project>
+
+  <PropertyGroup>
+    <RevitYear>2024</RevitYear>
+    <TargetFramework>net481</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <Import Project=".csproj/StructLiteRevit.paths" />
+  <Import Project=".csproj/StructLiteRevit.base" />
+</Project>

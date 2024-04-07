@@ -1,6 +1,0 @@
-@GUIServer_HostAddress = http://localhost:5236
-
-GET {{GUIServer_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

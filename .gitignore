@@ -80,3 +80,4 @@ wwwroot/
 !StructLiteRevit/GUI/server/*
 !StructLiteRevit/GUI/wwwroot/
 !StructLiteRevit/GUI/wwwroot/*
+!RevitDependencies/**
