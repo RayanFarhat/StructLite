@@ -18,6 +18,7 @@ namespace StructLite.RevitCommands
         {
             try
             {
+                GuiServerHandler.StartGUI();
                 UIDocument uidoc = commandData.Application.ActiveUIDocument;
                 Adapter.Init(commandData.Application);
                 RCModel.Instance.SynchronizeModels();

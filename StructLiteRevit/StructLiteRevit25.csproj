@@ -6,9 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <Import Project=".csproj/StructLiteRevit.paths" />
   <Import Project=".csproj/StructLiteRevit.base" />
-  
 </Project>

@@ -40,5 +40,12 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
+    <!-- important to copy plugin gui files -->
+  <ItemGroup>
+    <Content Include="GUIServer\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>GUIServer\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
 
 </Project>

@@ -8,4 +8,8 @@
 
   <Import Project=".csproj/StructLiteRevit.paths" />
   <Import Project=".csproj/StructLiteRevit.base" />
+
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+  </ItemGroup>
 </Project>

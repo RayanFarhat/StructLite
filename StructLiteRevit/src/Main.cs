@@ -9,7 +9,6 @@ using StructLite.Analysis;
 using Autodesk.Revit.DB.Structure;
 using StructLite.RC;
 using System.Data.Common;
-using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 
@@ -73,41 +72,7 @@ namespace StructLite
                     transaction.Start();
                     transaction.Commit();
                 }
-                var proc = new Process();
-                // proc.StartInfo.FileName = "C:\\Program Files\\Autodesk\\Revit 2024\\Revit.exe";
-                //proc.StartInfo.Arguments = "C:\\Users\\ryanf\\Desktop\\Project1.rvt";
-                string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                proc.StartInfo.FileName = directory + "\\server\\StructLiteRevitServer.exe";
-                // Stop the process from opening a new window
-                //proc.StartInfo.RedirectStandardOutput = false;
-                //proc.StartInfo.UseShellExecute = false;
-                //proc.StartInfo.CreateNoWindow = true;
-                //TaskDialog.Show("s", directory + "server/GUIServer.exe");
-
-                //proc.Start();
-                //proc.WaitForExit();
-
-                //Process[] pname = Process.GetProcessesByName("GUIServer");
-                //if (pname.Length == 0)
-                //{
-                //    var proc = new Process();
-                //    // proc.StartInfo.FileName = "C:\\Program Files\\Autodesk\\Revit 2024\\Revit.exe";
-                //    //proc.StartInfo.Arguments = "C:\\Users\\ryanf\\Desktop\\Project1.rvt";
-                //    proc.StartInfo.FileName = "server/GUIServer.exe";
-                //    // Stop the process from opening a new window
-                //    //proc.StartInfo.RedirectStandardOutput = false;
-                //    //proc.StartInfo.UseShellExecute = false;
-                //    //proc.StartInfo.CreateNoWindow = true;
-
-                //    proc.Start();
-                //    proc.WaitForExit();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("run" + pname[0].ProcessName.ToString());
-                //    pname[0].Kill();
-                //    pname[0].Dispose();
-                //}
+                Process.Start(new ProcessStartInfo("http://localhost:5000") { UseShellExecute = true });
 
             }
 

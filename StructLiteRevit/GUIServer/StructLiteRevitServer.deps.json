@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "GUIServer/1.0.0": {
+      "StructLiteRevitServer/1.0.0": {
         "dependencies": {
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
-          "GUIServer.dll": {}
+          "StructLiteRevitServer.dll": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -64,7 +64,7 @@
     }
   },
   "libraries": {
-    "GUIServer/1.0.0": {
+    "StructLiteRevitServer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

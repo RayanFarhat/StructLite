@@ -12,8 +12,9 @@ namespace StructLite.Analysis
         public void plot_Shear(Direction D, string combo_name = "Combo 1", bool isMetric = true)
         {
             Check_segments(combo_name);
-            string SeriesName="somthing wrong";
-            if (D == Direction.Fy) {
+            string SeriesName = "somthing wrong";
+            if (D == Direction.Fy)
+            {
                 SeriesName = "Shear on Y-axis";
             }
             else if (D == Direction.Fz)
@@ -34,18 +35,18 @@ namespace StructLite.Analysis
                 Ytitle = "Shear Envelope (K)";
             }
 
-            var f = new MemberPlot(
-                SeriesName,
-                Shear_Array(D, 999, combo_name),
-                L(),
-                min,
-                max,
-                $"Min Shear is {min}",
-                $"Max Shear is {max}",
-                Xtitle,
-                Ytitle
-                );
-            f.Show();
+            // var f = new MemberPlot(
+            //     SeriesName,
+            //     Shear_Array(D, 999, combo_name),
+            //     L(),
+            //     min,
+            //     max,
+            //     $"Min Shear is {min}",
+            //     $"Max Shear is {max}",
+            //     Xtitle,
+            //     Ytitle
+            //     );
+            // f.Show();
         }
         public void plot_Moment(Direction D, string combo_name = "Combo 1", bool isMetric = true)
         {
@@ -72,18 +73,18 @@ namespace StructLite.Analysis
                 Xtitle = "Location (ft)";
                 Ytitle = "Moment Envelope (K-ft)";
             }
-            var f = new MemberPlot(
-                SeriesName,
-                Moment_Array(D, 999, combo_name),
-                L(),
-                min,
-                max,
-                $"Min Moment is {min}",
-                $"Max Moment is {max}",
-                Xtitle,
-                Ytitle
-                );
-            f.Show();
+            // var f = new MemberPlot(
+            //     SeriesName,
+            //     Moment_Array(D, 999, combo_name),
+            //     L(),
+            //     min,
+            //     max,
+            //     $"Min Moment is {min}",
+            //     $"Max Moment is {max}",
+            //     Xtitle,
+            //     Ytitle
+            //     );
+            // f.Show();
         }
         public void plot_Deflection(Direction D, string combo_name = "Combo 1", bool isMetric = true)
         {
@@ -128,18 +129,18 @@ namespace StructLite.Analysis
                 }
             }
 
-            var f = new MemberPlot(
-                SeriesName,
-                arr,
-                L(),
-                min,
-                max,
-                $"Min Deflection is {min}",
-                $"Max Deflection is {max}",
-                Xtitle,
-                Ytitle
-                );
-            f.Show();
+            // var f = new MemberPlot(
+            //     SeriesName,
+            //     arr,
+            //     L(),
+            //     min,
+            //     max,
+            //     $"Min Deflection is {min}",
+            //     $"Max Deflection is {max}",
+            //     Xtitle,
+            //     Ytitle
+            //     );
+            // f.Show();
         }
     }
 }

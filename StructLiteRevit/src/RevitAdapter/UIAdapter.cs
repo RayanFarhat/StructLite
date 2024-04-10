@@ -15,11 +15,11 @@ namespace StructLite.RevitAdapter
     public class UIAdapter
     {
         public static UIControlledApplication app;
-        public static string tabName; 
+        public static string tabName;
         public static Dictionary<string, RibbonPanel> panels = new Dictionary<string, RibbonPanel>();
         public static Dictionary<string, PushButton> PushButtons = new Dictionary<string, PushButton>();
         public static Dictionary<string, TextBox> TextBoxes = new Dictionary<string, TextBox>();
-        public static Dictionary<string, RadioButtonGroup> RadioButtonGroups = new Dictionary<string, RadioButtonGroup>(); 
+        public static Dictionary<string, RadioButtonGroup> RadioButtonGroups = new Dictionary<string, RadioButtonGroup>();
         public static void Init(UIControlledApplication uiControlledApplication)
         {
             app = uiControlledApplication;
@@ -31,22 +31,22 @@ namespace StructLite.RevitAdapter
         }
         public static void AddPanel(string panelName)
         {
-            panels.Add(panelName,app.CreateRibbonPanel(tabName,panelName));
+            panels.Add(panelName, app.CreateRibbonPanel(tabName, panelName));
         }
-        public static void AddPushBtn(string btnName, string panelName, string title,string className, string tooltip = "")
+        public static void AddPushBtn(string btnName, string panelName, string title, string className, string tooltip = "")
         {
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
-            PushButtonData buttonData = new PushButtonData(title.Replace(" ",""),
+            PushButtonData buttonData = new PushButtonData(title.Replace(" ", ""),
                title, thisAssemblyPath, className);
             PushButton pushButton = panels[panelName].AddItem(buttonData) as PushButton;
             if (tooltip != "")
             {
                 pushButton.ToolTip = tooltip;
             }
-            PushButtons.Add(btnName,pushButton);
+            PushButtons.Add(btnName, pushButton);
         }
         // image be 32X32
-        public static void AddPushBtnImage(string btnName, string panelName, string title, string className,string imgPath, string tooltip = "")
+        public static void AddPushBtnImage(string btnName, string panelName, string title, string className, string imgPath, string tooltip = "")
         {
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
             PushButtonData buttonData = new PushButtonData(title.Replace(" ", ""),
@@ -59,11 +59,11 @@ namespace StructLite.RevitAdapter
             {
                 pushButton.ToolTip = tooltip;
             }
-            PushButtons.Add(btnName,pushButton);
+            PushButtons.Add(btnName, pushButton);
         }
 
         // in EnterPressEvent add  void ProcessText(object sender, Autodesk.Revit.UI.Events.TextBoxEnterPressedEventArgs args){ }
-        public static void AddTextBox(string TextBoxName, string panelName, string name,  string PromptText,string tooltip = "", string longDescription = "")
+        public static void AddTextBox(string TextBoxName, string panelName, string name, string PromptText, string tooltip = "", string longDescription = "")
         {
             TextBoxData textData = new TextBoxData(name);
             if (tooltip != "")
@@ -77,7 +77,7 @@ namespace StructLite.RevitAdapter
             TextBox tBox = panels[panelName].AddItem(textData) as TextBox;
             tBox.Width = 100;
             tBox.PromptText = PromptText;
-            TextBoxes.Add(TextBoxName,tBox);
+            TextBoxes.Add(TextBoxName, tBox);
         }
         public static void AddRadioButtonGroup(string Name, RadioButtonGroup g)
         {
