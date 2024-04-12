@@ -14,7 +14,7 @@ namespace StructLite.Analysis
         /// </summary>
         public double Shear(double x)
         {
-            return (double)(V1 + w1 * x + Math.Pow(x,2)*(-w1+w2)/(2*Length()));
+            return (double)(V1 + w1 * x + Math.Pow(x, 2) * (-w1 + w2) / (2 * Length()));
         }
         /// <summary>
         ///  Returns the maximum shear in the segment.
@@ -30,9 +30,9 @@ namespace StructLite.Analysis
             if (Num.IsEqual(w1 - w2, 0))
                 x1 = 0;
             else
-                x1 = w1*Length()/(w1-w2);
+                x1 = w1 * Length() / (w1 - w2);
             //x1 < 0 or x1 > L
-            if(Num.IsFirstSmallerThanSecond(x1,0) || Num.IsFirstBiggerThanSecond(x1,Length()))
+            if (Num.IsFirstSmallerThanSecond(x1, 0) || Num.IsFirstBiggerThanSecond(x1, Length()))
                 x1 = 0;
             x2 = 0;
             var x3 = Length();
