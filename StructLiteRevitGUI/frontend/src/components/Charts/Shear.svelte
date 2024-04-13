@@ -1,28 +1,13 @@
 <script>
     import { chart } from "svelte-apexcharts";
-
-    function Shear(x) {
-        return Math.sin(x);
-    }
-
-    function getLengthArr(L) {
-        return Math.sin(x) * Math.cos(x);
-    }
-
-    function generateDataPoints(start, end, step) {
-        const data = [];
-        for (let x = start; x <= end; x += step) {
-            data.push([x, Shear(x)]);
-        }
-        return data;
-    }
-
-    // Create chart data using the generated data points
-    const start = 0;
-    const end = 10;
-    const step = 0.01;
-    const data = generateDataPoints(start, end, step);
-
+    import { getData } from "../../core/LoadData";
+    import { onMount } from "svelte";
+    let data = [2, 3];
+    $: data3 = data.length;
+    onMount(async () => {
+        data = (await getData()).shearData;
+        options.series = [{ data: data }];
+    });
     let options = {
         series: [
             {
@@ -70,6 +55,9 @@
                 },
             },
             tickAmount: 10,
+        },
+        noData: {
+            text: "Loading...",
         },
     };
 </script>

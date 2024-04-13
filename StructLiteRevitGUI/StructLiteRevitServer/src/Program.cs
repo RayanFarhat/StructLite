@@ -24,9 +24,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 app.UseStaticFiles();
 app.MapFallbackToFile("index.html");
 
 app.MapControllers();
 
-app.Run();
+
+app.Run("http://localhost:5555");

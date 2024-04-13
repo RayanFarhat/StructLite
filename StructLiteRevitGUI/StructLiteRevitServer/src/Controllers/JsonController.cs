@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
 using System.Text;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace GUIServer.Controllers;
 
@@ -16,7 +17,7 @@ public class JsonController : ControllerBase
     }
 
     [HttpGet()]
-    public string Get()
+    public IActionResult Get()
     {
         string jsonString = "";
         try
@@ -28,7 +29,8 @@ public class JsonController : ControllerBase
             System.IO.File.Delete(@"localStorage.json");
             System.Console.WriteLine("\nError reading the saved changed!\n");
         }
-        return jsonString;
+
+        return this.Content(jsonString, "application/json");
     }
     [HttpPost()]
     public string Post()
