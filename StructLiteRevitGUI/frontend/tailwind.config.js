@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
-    theme: {
+  theme: {
     extend: {},
   },
   plugins: [require("daisyui")],
@@ -9,23 +9,23 @@ export default {
     themes: [
       {
         mytheme: {
-        
+
           "primary": "#dc2626",
-                  
+
           "secondary": "#991b1b",
-                  
+
           "accent": "#be123c",
-                  
+
           "neutral": "#2a323c",
-                  
-          "base-100": "#1d232a",
-                  
+
+          "base-100": "#ffffff",
+
           "info": "#3abff8",
-                  
+
           "success": "#36d399",
-                  
+
           "warning": "#fbbd23",
-                  
+
           "error": "#f87272",
         },
       },

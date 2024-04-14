@@ -72,8 +72,6 @@ namespace StructLite
                     transaction.Start();
                     transaction.Commit();
                 }
-                Process.Start(new ProcessStartInfo("http://localhost:5000") { UseShellExecute = true });
-
             }
 
             catch (Exception e)
@@ -134,7 +132,7 @@ namespace StructLite
 
         public Result OnShutdown(UIControlledApplication application)
         {
-            // nothing to clean up in this simple case
+            GuiServerHandler.Shutdown();
             return Result.Succeeded;
         }
     }

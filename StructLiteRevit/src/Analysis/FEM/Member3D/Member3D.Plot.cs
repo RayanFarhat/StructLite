@@ -47,6 +47,33 @@ namespace StructLite.Analysis
             //     Ytitle
             //     );
             // f.Show();
+
+            switch (D)
+            {
+                case Direction.Fz:
+                    {
+                        var arr = Shear_Array(D, 100, combo_name);
+                        GuiServerHandler.localData.ZShearData = new List<Point2D>();
+                        for (int i = 0; i < arr[0].Length; i++)
+                        {
+                            var p = new Point2D(arr[0][i], arr[1][i]);
+                            GuiServerHandler.localData.ZShearData.Add(p);
+                        }
+                    }
+                    break;
+
+                case Direction.Fy:
+                    {
+                        var arr = Shear_Array(D, 100, combo_name);
+                        GuiServerHandler.localData.YShearData = new List<Point2D>();
+                        for (int i = 0; i < arr[0].Length; i++)
+                        {
+                            var p = new Point2D(arr[0][i], arr[1][i]);
+                            GuiServerHandler.localData.YShearData.Add(p);
+                        }
+                    }
+                    break;
+            }
         }
         public void plot_Moment(Direction D, string combo_name = "Combo 1", bool isMetric = true)
         {
@@ -85,6 +112,32 @@ namespace StructLite.Analysis
             //     Ytitle
             //     );
             // f.Show();
+            switch (D)
+            {
+                case Direction.My:
+                    {
+                        var arr = Moment_Array(D, 100, combo_name);
+                        GuiServerHandler.localData.YMomentData = new List<Point2D>();
+                        for (int i = 0; i < arr[0].Length; i++)
+                        {
+                            var p = new Point2D(arr[0][i], arr[1][i]);
+                            GuiServerHandler.localData.YMomentData.Add(p);
+                        }
+                    }
+                    break;
+
+                case Direction.Mz:
+                    {
+                        var arr = Moment_Array(D, 100, combo_name);
+                        GuiServerHandler.localData.ZMomentData = new List<Point2D>();
+                        for (int i = 0; i < arr[0].Length; i++)
+                        {
+                            var p = new Point2D(arr[0][i], arr[1][i]);
+                            GuiServerHandler.localData.ZMomentData.Add(p);
+                        }
+                    }
+                    break;
+            }
         }
         public void plot_Deflection(Direction D, string combo_name = "Combo 1", bool isMetric = true)
         {
@@ -104,7 +157,7 @@ namespace StructLite.Analysis
             }
             var min = Min_Deflection(D, combo_name);
             var max = Max_Deflection(D, combo_name);
-            var arr = Deflection_Array(D, 999, combo_name);
+            var array = Deflection_Array(D, 999, combo_name);
             string Xtitle, Ytitle;
             if (isMetric)
             {
@@ -112,9 +165,9 @@ namespace StructLite.Analysis
                 Ytitle = "Deflection (mm)";
                 min = min * 1000;
                 max = max * 1000;
-                for (int i = 0; i < arr[1].Length; i++)
+                for (int i = 0; i < array[1].Length; i++)
                 {
-                    arr[1][i] = arr[1][i] * 1000;
+                    array[1][i] = array[1][i] * 1000;
                 }
             }
             else
@@ -123,9 +176,9 @@ namespace StructLite.Analysis
                 Ytitle = "Deflection (in)";
                 min = min * 12;
                 max = max * 12;
-                for (int i = 0; i < arr[1].Length; i++)
+                for (int i = 0; i < array[1].Length; i++)
                 {
-                    arr[1][i] = arr[1][i] * 12;
+                    array[1][i] = array[1][i] * 12;
                 }
             }
 
@@ -141,6 +194,44 @@ namespace StructLite.Analysis
             //     Ytitle
             //     );
             // f.Show();
+            switch (D)
+            {
+                case Direction.Fx:
+                    {
+                        var arr = Deflection_Array(D, 100, combo_name);
+                        GuiServerHandler.localData.XDeflectionData = new List<Point2D>();
+                        for (int i = 0; i < arr[0].Length; i++)
+                        {
+                            var p = new Point2D(arr[0][i], arr[1][i]);
+                            GuiServerHandler.localData.XDeflectionData.Add(p);
+                        }
+                    }
+                    break;
+
+                case Direction.Fy:
+                    {
+                        var arr = Deflection_Array(D, 100, combo_name);
+                        GuiServerHandler.localData.YDeflectionData = new List<Point2D>();
+                        for (int i = 0; i < arr[0].Length; i++)
+                        {
+                            var p = new Point2D(arr[0][i], arr[1][i]);
+                            GuiServerHandler.localData.YDeflectionData.Add(p);
+                        }
+                    }
+                    break;
+
+                case Direction.Fz:
+                    {
+                        var arr = Deflection_Array(D, 100, combo_name);
+                        GuiServerHandler.localData.ZDeflectionData = new List<Point2D>();
+                        for (int i = 0; i < arr[0].Length; i++)
+                        {
+                            var p = new Point2D(arr[0][i], arr[1][i]);
+                            GuiServerHandler.localData.ZDeflectionData.Add(p);
+                        }
+                    }
+                    break;
+            }
         }
     }
 }

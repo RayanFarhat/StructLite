@@ -24,7 +24,7 @@ namespace StructLite.Mathematics
         /// </summary>
         public bool Equals(Matrix other)
         {
-            if (other == null)
+            if (other is null)
                 return false;
 
             return MatrixFunctions.Equals(this.InnerMatrix, other.InnerMatrix);

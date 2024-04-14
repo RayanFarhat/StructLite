@@ -6,6 +6,7 @@ using StructLite.RC;
 using StructLite.RevitAdapter;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 namespace StructLite.RevitCommands
 {
@@ -28,9 +29,8 @@ namespace StructLite.RevitCommands
                 }
                 var elems = RCModel.Instance.Elements;
                 var id = selectedElement.Id.ToString();
-                var value = UIAdapter.TextBoxes["combo name"].Value;
                 string comboName = "";
-                if (value != null)
+                if (UIAdapter.TextBoxes["combo name"].Value is string value)
                     comboName = value.ToString();
 
                 if (!RCModel.Instance.FEModel.LoadCombos.ContainsKey(comboName))
@@ -64,23 +64,18 @@ namespace StructLite.RevitCommands
         }
         private void plot(Member3D m, string comboName)
         {
-            string checkedButtonName = UIAdapter.RadioButtonGroups["axisRadio"].Current.Name;
-            if (checkedButtonName == "toggleButtonX")
-            {
-                m.plot_Deflection(Direction.Fx, comboName);
-            }
-            else if (checkedButtonName == "toggleButtonY")
-            {
-                m.plot_Shear(Direction.Fy, comboName);
-                m.plot_Moment(Direction.Mz, comboName);
-                m.plot_Deflection(Direction.Fy, comboName);
-            }
-            else if (checkedButtonName == "toggleButtonZ")
-            {
-                m.plot_Shear(Direction.Fz, comboName);
-                m.plot_Moment(Direction.My, comboName);
-                m.plot_Deflection(Direction.Fz, comboName);
-            }
+            m.plot_Deflection(Direction.Fx, comboName);
+
+            m.plot_Shear(Direction.Fy, comboName);
+            m.plot_Moment(Direction.Mz, comboName);
+            m.plot_Deflection(Direction.Fy, comboName);
+
+            m.plot_Shear(Direction.Fz, comboName);
+            m.plot_Moment(Direction.My, comboName);
+            m.plot_Deflection(Direction.Fz, comboName);
+
+            GuiServerHandler.writeData();
+            Process.Start(new ProcessStartInfo("http://localhost:5555") { UseShellExecute = true });
         }
     }
 }

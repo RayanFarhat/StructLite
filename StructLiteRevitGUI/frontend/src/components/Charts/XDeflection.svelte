@@ -1,55 +1,9 @@
 <script>
     import { chart } from "svelte-apexcharts";
-    import { getData } from "../../core/LoadData";
-    import { onMount } from "svelte";
+    import { DataStore } from "../../core/LoadData";
+    import { get } from "svelte/store";
+    let data = get(DataStore).XDeflectionData;
 
-    onMount(async () => {
-        const res = await fetch(`/tutorial/api/album`);
-        photos = await res.json();
-    });
-    function Shear(x) {
-        return Math.sin(x);
-    }
-
-    function getLengthArr(L) {
-        return Math.sin(x) * Math.cos(x);
-    }
-
-    function generateDataPoints(start, end, step) {
-        const data = [];
-        for (let x = start; x <= end; x += step) {
-            data.push([x, Shear(x)]);
-        }
-        return data;
-    }
-
-    (async () => {
-        console.log(await getData());
-    })();
-
-    // Create chart data using the generated data points
-    const start = 0;
-    const end = 10;
-    const step = 0.01;
-    let data = generateDataPoints(start, end, step);
-    data = [
-        {
-            x: 0,
-            y: 0,
-        },
-        {
-            x: 2,
-            y: 2,
-        },
-        {
-            x: 3,
-            y: 3,
-        },
-        {
-            x: 4,
-            y: 4,
-        },
-    ];
     let options = {
         series: [
             {
@@ -57,8 +11,8 @@
             },
         ],
         chart: {
-            width: 700,
-            height: 550,
+            width: 500,
+            height: 400,
             type: "area",
             zoom: {
                 enabled: true,
@@ -68,10 +22,10 @@
             enabled: false,
         },
         stroke: {
-            curve: "stepline",
+            curve: "straight",
         },
         title: {
-            text: "Shear",
+            text: "Deflection on X",
             align: "left",
         },
         grid: {
@@ -80,6 +34,8 @@
                 opacity: 0.5,
             },
         },
+        colors: ["#5CFF5C", "#E91E63", "#9C27B0"],
+
         xaxis: {
             type: "numeric",
             labels: {

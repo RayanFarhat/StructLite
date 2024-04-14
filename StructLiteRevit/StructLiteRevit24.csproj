@@ -4,6 +4,7 @@
     <RevitYear>2024</RevitYear>
     <TargetFramework>net481</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>8602;8600;8618;8603;8604;8629</NoWarn>
   </PropertyGroup>
 
   <Import Project=".csproj/StructLiteRevit.paths" />
@@ -11,5 +12,9 @@
 
   <ItemGroup>
     <Reference Include="PresentationCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.3" />
   </ItemGroup>
 </Project>

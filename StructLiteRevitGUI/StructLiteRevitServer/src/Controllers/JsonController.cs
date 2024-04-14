@@ -26,7 +26,6 @@ public class JsonController : ControllerBase
         }
         catch
         {
-            System.IO.File.Delete(@"localStorage.json");
             System.Console.WriteLine("\nError reading the saved changed!\n");
         }
 

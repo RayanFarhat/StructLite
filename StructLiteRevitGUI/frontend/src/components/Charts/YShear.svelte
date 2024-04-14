@@ -1,13 +1,9 @@
 <script>
     import { chart } from "svelte-apexcharts";
-    import { getData } from "../../core/LoadData";
-    import { onMount } from "svelte";
-    let data = [2, 3];
-    $: data3 = data.length;
-    onMount(async () => {
-        data = (await getData()).shearData;
-        options.series = [{ data: data }];
-    });
+    import { DataStore } from "../../core/LoadData";
+    import { get } from "svelte/store";
+    let data = get(DataStore).YShearData;
+
     let options = {
         series: [
             {
@@ -15,8 +11,8 @@
             },
         ],
         chart: {
-            width: 700,
-            height: 550,
+            width: 500,
+            height: 400,
             type: "area",
             zoom: {
                 enabled: true,
@@ -26,10 +22,10 @@
             enabled: false,
         },
         stroke: {
-            curve: "stepline",
+            curve: "straight",
         },
         title: {
-            text: "Shear",
+            text: "Shear on Y",
             align: "left",
         },
         grid: {
