@@ -11,7 +11,7 @@
     <br />
     <p class="text-lg">
         Our company name is "StructLite". Our website address is
-        "https://structlite.com".
+        "https://structlite.net".
     </p>
     <br />
     <br />

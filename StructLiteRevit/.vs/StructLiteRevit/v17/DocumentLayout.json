@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45C4C452-1BD6-4678-ABBD-F0093DD7245D}|StructLiteRevit24.csproj|c:\\users\\ryanf\\desktop\\structlite\\structliterevit\\src\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45C4C452-1BD6-4678-ABBD-F0093DD7245D}|StructLiteRevit24.csproj|solutionrelative:src\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -27,15 +30,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAGwUAAAAAAAAAAAhwIUUAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-04-19T11:04:19.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Main.cs",
               "RelativeDocumentMoniker": "src\\Main.cs",
               "ToolTip": "C:\\Users\\ryanf\\Desktop\\StructLite\\StructLiteRevit\\src\\Main.cs",
               "RelativeToolTip": "src\\Main.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAQwEkAAAARAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwEkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T08:24:22.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T08:24:22.473Z"
             }
           ]
         }

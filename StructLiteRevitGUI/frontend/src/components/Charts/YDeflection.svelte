@@ -25,7 +25,7 @@
             curve: "straight",
         },
         title: {
-            text: "Deflection on X",
+            text: "Deflection on Y",
             align: "left",
         },
         grid: {

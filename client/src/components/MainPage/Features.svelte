@@ -42,8 +42,8 @@
                 >
             </div>
             <div class="timeline-end timeline-box">
-                Perform Analysis on Revit Rectangular Concrete Beams and
-                Columns. <span class="text-primary">Free</span>
+                Perform Analysis on Revit Rectangular Concrete Beams and Columns
+                (member Elements). <span class="text-primary">Free</span>
             </div>
             <hr class="bg-primary" />
         </li>
