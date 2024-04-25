@@ -50,4 +50,4 @@ Now you can write the combo name and press 'Plot Member' Btn to see the diagrams
 ## Dev
 [Dev Notes](docs/Dev.md)
 
-* All thanks for Craig, the owner of [PYNITE](https://github.com/JWock82/PyNite) for inspiration and making sure I did the calculations correctly.
+* All thanks for Craig, the owner of [PYNITE](https://github.com/JWock82/PyNite) for inspiration.
