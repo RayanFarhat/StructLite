@@ -25,7 +25,6 @@ namespace StructLite.RevitCommands
                 RCModel.Instance.FEModel.Analyze();
                 UIAdapter.TextBoxes["combo name"].Value = RCModel.Instance.FEModel.LoadCombos.First().Key;
                 TaskDialog.Show("StructLite", "Analysis is done.");
-                TaskDialog.Show("StructLite", $"{RCModel.Instance.FEModel}");
             }
             catch (Exception e)
             {

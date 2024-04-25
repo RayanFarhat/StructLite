@@ -124,8 +124,8 @@ namespace StructLite
             UIAdapter.AddRadioButtonGroup("axisRadio", radioButtonGroup);
 
             //text panel
-            UIAdapter.AddPanel("Test");
-            UIAdapter.AddPushBtn("Test", "Test", "btn", "StructLite.Test", "press this btn");
+            //UIAdapter.AddPanel("Test");
+            //UIAdapter.AddPushBtn("Test", "Test", "btn", "StructLite.Test", "press this btn");
 
             return Result.Succeeded;
         }
