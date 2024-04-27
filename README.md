@@ -43,7 +43,7 @@ You should get this windows when the analysis is finished
 
 ![alt text](docs/images/AnaDone.png)
 
-Now you can write the combo name and press 'Plot Member' Btn to see the diagrams for the member you have chose:
+Now you can write the combo name and press 'Plot Member' Btn to see the Shear, Moment, Deflection diagrams for the member you have chose:
 
 ![alt text](docs/images/diagrams1.png)
 ![alt text](docs/images/diagrams2.png)
